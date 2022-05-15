@@ -13,7 +13,6 @@ torch.manual_seed(0)
 
 
 class SimCLR(object):
-
     def __init__(self, *args, **kwargs):
         self.args = kwargs['args']
         self.model = kwargs['model'].to(self.args.device)
